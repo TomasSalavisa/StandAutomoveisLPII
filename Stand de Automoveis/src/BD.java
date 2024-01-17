@@ -82,4 +82,18 @@ public class BD {
             }
             return null;
         }
+        
+        public static ResultSet EliminarCliente(){
+            try{
+                String sql = "DELETE FROM clientes WHERE Nome = ?";
+                Connection con = liga();
+                PreparedStatement ps = con.prepareStatement(sql);
+                ResultSet rs = null;
+                rs =ps.executeQuery();
+                return rs;
+            }catch(SQLException e){
+                e.printStackTrace();
+            }
+            return null;
+        }
 }

@@ -1,0 +1,7 @@
+Nome: 12
+Morada: 12
+Telefone: 12
+Codigo Postal: 12
+Email: 12
+Login: 12
+Passe: 12
