@@ -1,0 +1,6 @@
+Marca: nnjjb
+Modelo: bubub
+Segmento: Carrinha
+Combustível: Diesel
+Preço: 111
+Ano: 11

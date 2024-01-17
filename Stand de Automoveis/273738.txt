@@ -1,0 +1,6 @@
+Marca: bmw
+Modelo: a7
+Segmento: SUV/TT
+Combustível: Hidrogénio
+Preço: 273738
+Ano: 28837

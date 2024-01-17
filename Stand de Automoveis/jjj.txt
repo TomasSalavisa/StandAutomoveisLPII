@@ -1,0 +1,6 @@
+Marca: jjj
+Modelo: jjj
+Segmento: Carrinha
+Combustível: Gasolina
+Preço: 1111
+Ano: 11

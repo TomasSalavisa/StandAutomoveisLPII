@@ -1,0 +1,6 @@
+Marca: 4545
+Modelo: 54545
+Segmento: Citadinho
+Combustível: Gasolina
+Preço: 5454
+Ano: 545

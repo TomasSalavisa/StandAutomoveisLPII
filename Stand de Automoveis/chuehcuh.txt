@@ -1,0 +1,6 @@
+Marca: chuehcuh
+Modelo: vniviei
+Segmento: Coupé
+Combustível: GNC
+Preço: 488488
+Ano: 448484

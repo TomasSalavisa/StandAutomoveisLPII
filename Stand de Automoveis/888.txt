@@ -1,0 +1,6 @@
+Marca: 888
+Modelo: 888
+Segmento: Citadinho
+Combustível: Híbrido(Gasolina)
+Preço: 11
+Ano: 11

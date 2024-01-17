@@ -2,11 +2,11 @@ public class Carro {
     private String Marca;
     private String Modelo;
     private String Segmento;
-    private int Combustivel;
+    private String Combustivel;
     private int Preco;
     private int Ano;
 
-    public Carro(String Marca, String Modelo, String Segmento, int Combustivel, int Preco, int Ano) {
+    public Carro(String Marca, String Modelo, String Segmento, String Combustivel, int Preco, int Ano) {
         this.Marca = Marca;
         this.Modelo = Modelo;
         this.Segmento = Segmento;
@@ -39,11 +39,11 @@ public class Carro {
         this.Segmento = Segmento;
     }
 
-    public int getCombustivel() {
+    public String getCombustivel() {
         return Combustivel;
     }
 
-    public void setCombustivel(int Combustivel) {
+    public void setCombustivel(String Combustivel) {
         this.Combustivel = Combustivel;
     }
 
@@ -62,6 +62,8 @@ public class Carro {
     public void setAno(int Ano) {
         this.Ano = Ano;
     }
+
+
     
     
     public String MostraDadosCarro(){

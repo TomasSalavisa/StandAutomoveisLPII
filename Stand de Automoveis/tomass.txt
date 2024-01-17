@@ -1,7 +1,0 @@
-Nome: tomass
-Morada: 9
-Telefone: 9
-Codigo Postal: 9
-Email: 9
-Login: 9
-Passe: 9

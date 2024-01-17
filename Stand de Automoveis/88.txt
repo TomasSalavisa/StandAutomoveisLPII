@@ -1,0 +1,6 @@
+Marca: hhh
+Modelo: hhh
+Segmento: Pequeno citadino
+Combustível: Hidrogenio
+Preço: 88
+Ano: 88
