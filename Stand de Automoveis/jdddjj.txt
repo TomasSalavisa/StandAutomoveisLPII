@@ -1,6 +1,0 @@
-Marca: jdddjj
-Modelo: cjcjcjcj
-Segmento: Pequeno citadino
-Combustível: Híbrido(Gasolina)
-Preço: 123
-Ano: 123

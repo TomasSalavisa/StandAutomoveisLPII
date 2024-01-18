@@ -1,6 +1,0 @@
-Marca: modelo
-Modelo: jdjdi
-Segmento: Sedan
-Combustível: Gasolina
-Preço: 79787
-Ano: 87887

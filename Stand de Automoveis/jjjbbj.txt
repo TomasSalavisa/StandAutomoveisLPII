@@ -1,6 +1,0 @@
-Marca: huujj
-Modelo: jjjbbj
-Segmento: Sedan
-Combustível: GPL
-Preço: 7878
-Ano: 7887

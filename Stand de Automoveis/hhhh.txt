@@ -1,6 +1,0 @@
-Marca: hhhh
-Modelo: hhh
-Segmento: Carrinha
-Combustível: Híbrido(Diesel)
-Preço: 11
-Ano: 11

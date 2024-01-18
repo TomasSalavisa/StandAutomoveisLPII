@@ -1,6 +1,0 @@
-Marca: 55
-Modelo: 55
-Segmento: Citadinho
-Combustível: Gasolina
-Preço: 55
-Ano: 55

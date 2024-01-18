@@ -289,7 +289,7 @@ public void mostraMensagem(String titulo, String sms){
             ctxLogin.setText(rs.getString("Login"));
             ctxPasse.setText(rs.getString("Passe"));
         }else{
-            mostraMensagem("ERRO!", "Cliente nao registado");
+            mostraMensagem("ERRO!", "Cliente não registado");
         }
         Conn.close();
     }catch(SQLException e){

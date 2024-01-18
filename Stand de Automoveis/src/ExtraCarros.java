@@ -211,21 +211,7 @@ public void mostraMensagem(String titulo, String sms){
         JOptionPane.showMessageDialog(this,sms,titulo,JOptionPane.INFORMATION_MESSAGE);
     }
     private void btnEliminarCarroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarCarroActionPerformed
-        try{
-            Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection Conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/standcarro?useSSL=false&serverTimezone=UTC","root", "");
-
-            String sql = "DELETE FROM carros WHERE Marca = ?";
-            PreparedStatement ps = Conn.prepareStatement(sql);
-            ps.setString(1, ctxMarca.getText());
-            ps.executeUpdate();
-            mostraMensagem("INFO!", "Carro eliminado com sucesso!");
-            Conn.close();
-        }catch(SQLException e){
-
-        }   catch (ClassNotFoundException ex) {
-            Logger.getLogger(Extra.class.getName()).log(Level.SEVERE, null, ex);
-        }
+    
     }//GEN-LAST:event_btnEliminarCarroActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed

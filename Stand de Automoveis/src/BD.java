@@ -23,10 +23,10 @@ public class BD {
         public static void InserirCliente(Cliente c){
             try{
                 String sql = "INSERT INTO clientes(Nome,Morada,Telefone,CodigoPostal,Email,Login,Passe)" + "VALUES ('"+c.getNome()+"','"+
-                        c.getMorada()+"','"+
-                        c.getTelefone()+"',"+
-                        c.getCodigoPostal()+","+
-                        c.getEmail()+",'"+
+                        c.getMorada()+"',"+
+                        c.getTelefone()+","+
+                        c.getCodigoPostal()+",'"+
+                        c.getEmail()+"','"+
                         c.getLogin()+"','"+
                         c.getPasse()+"')";
                 Connection con = liga();
@@ -59,6 +59,7 @@ public class BD {
         Connection con = liga();
         
         try (PreparedStatement ps = con.prepareStatement(sql)) {
+            
             ps.setString(1, cd.getMarca());
             ps.setString(2, cd.getModelo());
             ps.setString(3, cd.getSegmento());
@@ -103,7 +104,7 @@ public class BD {
             return null;
         }
         
-        public static ResultSet EliminarCliente(){
+        /*public static ResultSet EliminarCliente(){
             try{
                 String sql = "DELETE FROM clientes WHERE Nome = ?";
                 Connection con = liga();
@@ -115,7 +116,7 @@ public class BD {
                 e.printStackTrace();
             }
             return null;
-        }
+        }*/
 }
 
 

@@ -1,6 +1,0 @@
-Marca: Model
-Modelo: cross
-Segmento: Carrinha
-Combustível: Gasolina
-Preço: 12727
-Ano: 82838

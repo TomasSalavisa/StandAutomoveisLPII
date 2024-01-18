@@ -1,6 +1,0 @@
-Marca: jnjnj
-Modelo: njnjnj
-Segmento: Pequeno citadino
-Combustível: Gasolina
-Preço: 555
-Ano: 555
