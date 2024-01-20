@@ -1,7 +1,0 @@
-Nome: 1
-Morada: 1
-Telefone: 1
-Codigo Postal: 11
-Email: ddd
-Login: 1
-Passe: 1

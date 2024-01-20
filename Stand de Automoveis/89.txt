@@ -1,7 +1,0 @@
-Nome: 89
-Morada: 8
-Telefone: 989
-Codigo Postal: 89
-Email: 89
-Login: 89
-Passe: 8
