@@ -29,11 +29,11 @@ public class VerClientes extends javax.swing.JFrame {
             ResultSet rs = null;
             rs = BD.MostrarCliente();
             
-            DefaultTableModel dtm = (DefaultTableModel)jTable1.getModel();
+            DefaultTableModel dtm = (DefaultTableModel)VerCliente.getModel();
             while(rs.next()){
                 dtm.addRow(new Object []{rs.getString(1),
                     rs.getString(2),rs.getString(3),rs.getString(4),
-                    rs.getString(5),rs.getString(6),rs.getString(7)});
+                    rs.getString(5),rs.getString(6)});
             }
         }catch(SQLException s){
             s.printStackTrace();
@@ -50,14 +50,14 @@ public class VerClientes extends javax.swing.JFrame {
     private void initComponents() {
 
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        VerCliente = new javax.swing.JTable();
         jLabel1 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        VerCliente.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null, null},
                 {null, null, null, null, null, null, null},
@@ -76,7 +76,7 @@ public class VerClientes extends javax.swing.JFrame {
                 return types [columnIndex];
             }
         });
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(VerCliente);
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         jLabel1.setText("Stand Automoveis");
@@ -192,10 +192,10 @@ public class VerClientes extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTable VerCliente;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
     // End of variables declaration//GEN-END:variables
 }

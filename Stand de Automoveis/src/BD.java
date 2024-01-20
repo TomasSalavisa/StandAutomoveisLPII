@@ -23,10 +23,10 @@ public class BD {
         public static void InserirCliente(Cliente c){
             try{
                 String sql = "INSERT INTO clientes(Nome,Morada,Telefone,CodigoPostal,Email,Login,Passe)" + "VALUES ('"+c.getNome()+"','"+
-                        c.getMorada()+"','"+
-                        c.getTelefone()+"',"+
-                        c.getCodigoPostal()+","+
-                        c.getEmail()+",'"+
+                        c.getMorada()+"',"+
+                        c.getTelefone()+","+
+                        c.getCodigoPostal()+",'"+
+                        c.getEmail()+"','"+
                         c.getLogin()+"','"+
                         c.getPasse()+"')";
                 Connection con = liga();
@@ -52,14 +52,35 @@ public class BD {
             return null;
         }
         
-        public static void InserirCarro(Carro c){
+        public static void InserirCarro(Carro cd) {
+    try {
+        String sql = "INSERT INTO carros(Marca, Modelo, Segmento, Combustivel, Preco, Ano) " +
+                     "VALUES (?, ?, ?, ?, ?, ?)";
+        Connection con = liga();
+        
+        try (PreparedStatement ps = con.prepareStatement(sql)) {
+            
+            ps.setString(1, cd.getMarca());
+            ps.setString(2, cd.getModelo());
+            ps.setString(3, cd.getSegmento());
+            ps.setString(4, cd.getCombustivel());
+            ps.setInt(5, cd.getPreco());
+            ps.setInt(6, cd.getAno());
+            
+            ps.executeUpdate();
+        }
+    } catch (SQLException e) {
+        e.printStackTrace();
+    }
+}
+        /*public static void InserirCarro(Carro cd){
             try{
-                String sql = "INSERT INTO carros(Marca,Modelo,Segmento,Combustivel,Preco,Ano)" + "VALUES ('"+c.getMarca()+"','"+
-                        c.getModelo()+"','"+
-                        c.getSegmento()+"',"+
-                        c.getCombustivel()+","+
-                        c.getPreco()+"',"+
-                        c.getAno()+"')";
+                String sql = "INSERT INTO carros(Marca,Modelo,Segmento,Combustivel,Preco,Ano)" + "VALUES ('"+cd.getMarca()+"','"+
+                        cd.getModelo()+"','"+
+                        cd.getSegmento()+"',"+
+                        cd.getCombustivel()+","+
+                        cd.getPreco()+",'"+
+                        cd.getAno()+"')";
                 Connection con = liga();
                 
                 PreparedStatement ps = con.prepareStatement(sql);
@@ -67,7 +88,7 @@ public class BD {
             }catch(SQLException e){
                 e.printStackTrace();
             }
-        }
+        }*/
         
         public static ResultSet MostrarCarro(){
             try{
@@ -83,7 +104,7 @@ public class BD {
             return null;
         }
         
-        public static ResultSet EliminarCliente(){
+        /*public static ResultSet EliminarCliente(){
             try{
                 String sql = "DELETE FROM clientes WHERE Nome = ?";
                 Connection con = liga();
@@ -95,5 +116,7 @@ public class BD {
                 e.printStackTrace();
             }
             return null;
-        }
+        }*/
 }
+
+
